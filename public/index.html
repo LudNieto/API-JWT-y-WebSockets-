@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket.IO Client</title>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <h1>Socket.IO Client</h1>
+    <script>
+        const socket = io('http://localhost:3000'); // Cambia el puerto si es necesario
+
+        socket.on('connect', () => {
+            console.log('Conectado al servidor');
+        });
+
+        socket.on('disconnect', () => {
+            console.log('Desconectado del servidor');
+        });
+
+        // Para probar el envío de mensajes
+        socket.on('message', (msg) => {
+            console.log('Mensaje recibido: ', msg);
+        });
+
+        // Enviar un mensaje al servidor (opcional)
+        socket.emit('message', 'Hola desde el cliente!');
+    </script>
+</body>
+</html>
