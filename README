@@ -16,8 +16,16 @@
     
    npm install
 
-3. Crea tu archivo .env a partir de la plantilla:
+3. Conéctate a tu instancia de MariaDB:
+
+   mysql -u tu_usuario -p
+
+4. Ejecuta el script:
+
+   SOURCE /ruta/a/tu/init_db.sql;
+
+5. Crea tu archivo .env a partir de la plantilla:
 
    cp .env.example .env
 
-4. Edita el archivo .env y proporciona tus credenciales de base de datos y tu secreto JWT.
+6. Edita el archivo .env y proporciona tus credenciales de base de datos y tu secreto JWT.
