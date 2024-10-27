@@ -9,6 +9,7 @@ exports.register = async (req, res) => {
         await User.create(username, password);
         res.status(201).json({ message: 'Usuario creado correctamente' });
     } catch (error) {
+        console.error('Error registrado: ',error)
         res.status(500).json({ message: 'Error al crear usuario', error });
     }
 };

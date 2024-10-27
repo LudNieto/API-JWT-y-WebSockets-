@@ -3,8 +3,8 @@ const http = require('http');
 const { Server } = require('socket.io');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const authRoutes = require('./routes/authRoutes');
-const setupChat = require('./sockets/chat');
+const authRoutes = require('./routes/routes');
+const setupChat = require('./sockets/chatSocket');
 
 dotenv.config();
 
