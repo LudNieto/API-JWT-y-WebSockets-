@@ -9,18 +9,15 @@
 
 1. Clona el repositorio:
 
-   ```bash
-   git clone https://
+   git clone https://github.com/LudNieto/API-JWT-y-WebSockets-.git
    cd tu_repositorio
 
 2. Instala las dependencias:
     
-   ```bash
    npm install
 
 3. Crea tu archivo .env a partir de la plantilla:
 
-   ```bash
    cp .env.example .env
 
 4. Edita el archivo .env y proporciona tus credenciales de base de datos y tu secreto JWT.
